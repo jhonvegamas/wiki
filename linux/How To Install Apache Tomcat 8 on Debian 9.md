@@ -36,7 +36,9 @@ or
 
 ```Shell
 service tomcat8 restart
+```
 ### Verify status
+```Shell
 service tomcat8 status
 ```
 
@@ -47,7 +49,7 @@ sudo nano /etc/tomcat8/tomcat-users.xml
 
 ```XML
 <role rolename="manager-gui" />
-<user username="manager" password="Password@123" roles="manager-gui" />
+<user username="manager" password="password-manager" roles="manager-gui" />
 <role rolename="admin-gui" />
-<user username="admin" password="Password@123" roles="admin-gui" />
+<user username="admin" password="admin123" roles="admin-gui" />
 ```
