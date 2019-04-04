@@ -7,14 +7,10 @@ sudo apt-get install tomcat8-admin tomcat8-examples tomcat8-docs
 
 ## Change port
 
-```Shell
-cd /etc/tomcat8/
-```
-
 ### Edit configuration file 
 
 ```Shell
-sudo nano server.xml
+sudo nano /etc/tomcat8/server.xml
 ```
 
 ```XML
@@ -47,7 +43,7 @@ service tomcat8 status
 ## Aditional Configuration
 ### Add users
 
-tomcat-users.xml
+sudo nano /etc/tomcat8/tomcat-users.xml
 
 ```XML
 <role rolename="manager-gui" />
