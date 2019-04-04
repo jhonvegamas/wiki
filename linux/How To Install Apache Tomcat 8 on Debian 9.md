@@ -45,6 +45,10 @@ service tomcat8 status
 ## Aditional Configuration
 ### Add users
 
+```Shell
+service tomcat8 stop
+```
+
 sudo nano /etc/tomcat8/tomcat-users.xml
 
 ```XML
@@ -52,4 +56,8 @@ sudo nano /etc/tomcat8/tomcat-users.xml
 <user username="manager" password="password-manager" roles="manager-gui" />
 <role rolename="admin-gui" />
 <user username="admin" password="admin123" roles="admin-gui" />
+```
+
+```Shell
+service tomcat8 start
 ```
