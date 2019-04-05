@@ -9,6 +9,13 @@ sudo apt-get install tomcat8-admin tomcat8-examples tomcat8-docs
 
 ### Edit configuration file 
 
+### Stop service
+
+```Shell
+service tomcat8 stop
+```
+Edit file
+
 ```Shell
 sudo nano /etc/tomcat8/server.xml
 ```
