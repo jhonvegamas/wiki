@@ -35,7 +35,6 @@ sudo nano /etc/tomcat8/server.xml
 ### Restart service
 
 ```Shell
-service tomcat8 stop
 service tomcat8 start
 ```
 
