@@ -11,9 +11,7 @@ https://sweetalert2.github.io/#download
       Swal.fire({
         title: 'Loading', html: 'Wait a moment please',	onBeforeOpen: () => {
           Swal.showLoading()
-            timerInterval = setInterval(() => {
-              Swal.getContent().querySelector('strong').textContent = Swal.getTimerLeft()
-            }, 100)
+            timerInterval = setInterval(() => {})
           },
           onClose: () => {
             clearInterval(timerInterval)
