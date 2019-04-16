@@ -136,8 +136,8 @@
 # PHP
 ```PHP
   if (isset($_FILES['file_up'])) {
-    $time   	= date("Y-m-d");
-    $name 	= $db->insert_id.'_'.$time.'_'.strtolower($_FILES['file_up']['name']);
+    $time   	=  date("Y-m-d").(microtime(true)*10000);
+    $nombre 	= 'FILE_'.$time.'_'.str_replace(' ','_',strtolower($_FILES['archivo']['name']));
     $target_path = "../usuario/documentos/";
     $target_path = $target_path . $name;
 
