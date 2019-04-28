@@ -20,3 +20,20 @@ items.sort(function (a, b) {
 });
 console.log(items);
 ```
+
+## Order by 2 items
+```JS
+items.sort(function (a,b) {
+if (a.bloque < b.bloque)
+  return -1;
+else if (a.bloque > b.bloque)
+  return 1;
+else 
+  if (a.numero< b.numero)
+    return -1;
+  else if (a.numero> b.numero)
+    return 1;
+  else 
+    return 0;
+});
+```
