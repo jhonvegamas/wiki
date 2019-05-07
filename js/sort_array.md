@@ -9,10 +9,12 @@ var items = [
   { name: 'Zeros', value: 37, score:5 }
 ];
 items.sort(function (a, b) {
-  if (a.name > b.name) {
+  var nameA = parseInt(a.name);
+  var nameB = parseInt(b.name);
+  if (nameA > nameB) {
     return 1;
   }
-  if (a.name < b.name) {
+  if (nameA < nameB) {
     return -1;
   }
   // a must be equal to b
