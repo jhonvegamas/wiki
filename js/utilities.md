@@ -11,3 +11,13 @@ Get Value Input
 ```JS
 document.getElementById(id).value
 ```
+Then SweetAlert2
+```JS
+Swal.fire(
+  'Yea!',
+  'Good job!',
+  'success'
+).then(() =>{
+  location.reload();
+});
+```
