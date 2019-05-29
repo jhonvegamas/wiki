@@ -35,7 +35,7 @@
       var file_up = document.getElementById('file_up');
       file_up = file_up.files[0];
 
-      if (archivo !== undefined) {                
+      if (file_up !== undefined) {                
         if (!validateFileType(file_up)) {
           $("#file_up").val('');
           Swal.fire("Type file","Unique this formats pdf, doc, docx o xlsx","warning");
