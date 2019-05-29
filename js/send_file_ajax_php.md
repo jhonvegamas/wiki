@@ -5,7 +5,7 @@
 ```
 # FORM
 ```HTML
-<form nctype="multipart/form-data" id="formUpload">  
+<form enctype="multipart/form-data" id="formUpload">  
 
   <label>Nombre</label>
   <input id="name" name="name" type="text" placeholder="">
