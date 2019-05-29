@@ -14,4 +14,4 @@ data = $.ajax({
         console.log( 'Could not get posts, server response: ' + textStatus + ': ' + errorThrown );
     }
 }).responseJSON;
-```JS
+```
