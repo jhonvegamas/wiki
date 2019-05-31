@@ -69,10 +69,13 @@ if (isset($_FILES['imagen'])) {
     if (explode("/", $_FILES['imagen']['type'])[0] == 'image') {
         if ($_FILES['imagen']['size'] < ((int)$maxSizeImages)) {
             $carpeta = 'ruta de las imagenes';
+            $time = date("Y-m-d");
+			$nombre = $time.'_'.str_replace(' ','_',strtolower($_FILES['imagen']['name']));
+            $target_path = $carpeta . $nombre;
             if (!file_exists($carpeta)) {
                 mkdir($carpeta, 0777, true);
             }
-            move_uploaded_file($_FILES['imagen']['tmp_name'],$carpeta. $_FILES['imagen']['name']);
+            move_uploaded_file($_FILES['imagen']['tmp_name'],$target_path);
             return true;
             break;              
         }else{
