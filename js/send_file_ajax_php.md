@@ -143,19 +143,19 @@
 
     if(!move_uploaded_file($_FILES['file_up']['tmp_name'], $target_path)) {
       $resp = [
-        "title"		=> "Ups",
-        "msg"		  => "Something went wrong, if the problem persists contact support",
-        "status"	=> "warning",
-        "post" 		=> $_POST,
+        "title"     => "Ups",
+        "msg"       => "Something went wrong, if the problem persists contact support",
+        "status"    => "warning",
+        "post"      => $_POST,
         "file_path" => $name
       ];
       return json_encode($resp);
     }
   }
   $resp = [
-    "title"		=> "Thank you",
-    "msg"		  => "We keep your information correctly",
-    "status"	=> "success"
+    "title"   => "Thank you",
+    "msg"     => "We keep your information correctly",
+    "status"  => "success"
   ];
   return json_encode($resp);
 ```
